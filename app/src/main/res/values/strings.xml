@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Lovely Nails</string>
+    <string name="services">Services</string>
+    <string name="moreinfo">\n\nFor more information please visit, link:\n https://www.yelp.com/biz/lovely-nails-land-o-lakes.\n\n 
+<b>Store\'s Hours:</b>
+\n\n 
+
+-<b>
+
+<i>Mon-Fri:</i></b>9:30<b>AM</b>
+- 7:00 
+<b>PM</b>
+\n 
+
+-<b>
+
+<i>Sat\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020:</i>
+
+</b>
+9:30 
+<b>AM</b>
+- 6:00 
+<b>PM</b>
+\n 
+
+-<b>
+
+<i>Sun\u0020\u0020\u0020\u0020\u0020\u0020\u0020:</i>
+
+</b>
+
+<b> Closed</b>
+\n\n 
+<b>Phone\u0020\u0020:</b>
+813-388-6411\n\n 
+<b>Address:</b>
+\n19455 
+<i>Shumard Oak Drive</i>
+\nSuite 101\nLand O\'lakes FL 34638\n\n 
+
+-<b>
+
+<i>Price List:</i>
+
+</b>
+\n\n 
+<b>Manicure</b>
+........................................................................$12\n 
+<b>French Manicure</b>
+.............................................................$17\n 
+<b>Gel French Manicure</b>
+.......................................................$35\n 
+<b>Acrylic Full Set</b>
+................................................................$30\n 
+<b>Acrylic French Full Set</b>
+....................................................$35\n 
+<b>Acrylic Fill-In</b>
+..................................................................$20\n 
+<b>UV Gel Set</b>
+......................................................................$50\n 
+<b>UV French Gel Set</b>
+...........................................................$55\n 
+<b>UV Gel Fill-In</b>
+...................................with regular or clear $30\n 
+<b>UV Gel Fill-In</b>
+...........................................with gel clear $30\n 
+<b>UV French Gel Fill-In</b>
+.......................................................$45\n 
+<b>Bio-Seaweed Gel Full Set</b>
+.....................................color $40\n 
+<b>Bio-Seaweed Gel Full Set</b>
+.....................................French $40\n 
+<b>Bio-Seaweed Gel Fill-In</b>
+..........................................color $40\n 
+<b>Bio-Seaweed Gel Fill-In</b>
+.......................................French $40\n 
+<b>Bio-Seaweed Gel Sculpture (no tip)</b>
+Extension.................................................add $5 to full set\n 
+<b>Bio-Seaweed Gel No Powder Overlay</b>
+.........................$35\n 
+<b>Bio-Seaweed Ombre/Scatter French/2 Tones</b>
+- full set.... $45\n 
+<b>Bio-Seaweed Ombre/Scatter French/2 Tones</b>
+- fill in....... $45\n </string>
+    <string name="medicure_options">Medicure Options</string>
+    <string name="medicure_choices">Basic Medicure</string>
+</resources>
