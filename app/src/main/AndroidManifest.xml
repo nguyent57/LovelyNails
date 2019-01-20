@@ -28,7 +28,9 @@
         <activity android:name=".MoreInfo" />
         <activity android:name=".MedicureInfo" />
         <activity android:name=".PedicureInfo" />
-        <activity android:name=".PedicureGridView"></activity>
+        <activity android:name=".PedicureGridView" />
+        <activity android:name=".MedicureGridView" />
+        <activity android:name=".PedicureGridView2"></activity>
     </application>
 
 </manifest>

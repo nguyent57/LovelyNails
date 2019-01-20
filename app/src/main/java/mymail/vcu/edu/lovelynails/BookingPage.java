@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -27,8 +29,8 @@ import java.util.Locale;
 - pedicure - which kind?
  */
 public class BookingPage extends AppCompatActivity implements View.OnClickListener {
-    Button button;
-    EditText editTextDate, editTextServices, editTextTime;
+    EditText editTextDate, editTextTime;
+    TextView serviceText;
     FirebaseAuth mAuth;
     private int  mYear, mMonth, mDay;
 
@@ -72,11 +74,17 @@ public class BookingPage extends AppCompatActivity implements View.OnClickListen
 
                 }
             });
-        editTextServices = findViewById(R.id.services);
+        serviceText = findViewById(R.id.services);
         //[ONCLICK]- BUTTONS
         findViewById(R.id.StoreInfo).setOnClickListener(this);
         findViewById(R.id.Medicure).setOnClickListener(this);
         findViewById(R.id.Pedicure).setOnClickListener(this);
+
+        //[QUESTION MARK BTNS]
+        findViewById(R.id.aboutMark).setOnClickListener(this);
+        findViewById(R.id.MediMark).setOnClickListener(this);
+        findViewById(R.id.PediMark).setOnClickListener(this);
+
         //[SET DATE] - call on setDate method
         TextView dateView = findViewById(R.id.BookingHD);
         setDate(dateView);
@@ -103,12 +111,29 @@ public class BookingPage extends AppCompatActivity implements View.OnClickListen
                 break;
             //[CASE 2] - BUTTON MEDICURE
             case R.id.Medicure:
-                startActivity(new Intent(BookingPage.this, MedicureInfo.class));
+                startActivity(new Intent(BookingPage.this, MedicureGridView.class));
                 finish();
                 break;
             //[CASE 3] - BUTTON PEDICURE
             case R.id.Pedicure:
-                startActivity(new Intent(BookingPage.this, PedicureInfo.class));
+                startActivity(new Intent(BookingPage.this, PedicureGridView.class));
+                finish();
+                break;
+            //[CASE 4] -
+            case R.id.aboutMark:
+                startActivity(new Intent(BookingPage.this,BookingPage.class));
+                Toast.makeText(this, "Select me for store info :)", Toast.LENGTH_LONG).show();
+                finish();
+                break;
+
+            case R.id.MediMark:
+                startActivity(new Intent(BookingPage.this,BookingPage.class));
+                Toast.makeText(this, "Select me for your Medicure options :)", Toast.LENGTH_LONG).show();
+                finish();
+                break;
+            case R.id.PediMark:
+                startActivity(new Intent(BookingPage.this,BookingPage.class));
+                Toast.makeText(this, "Select me for your Pedicure options :)", Toast.LENGTH_LONG).show();
                 finish();
                 break;
         }

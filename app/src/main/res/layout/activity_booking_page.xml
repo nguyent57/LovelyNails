@@ -35,15 +35,16 @@
             android:textAllCaps="false"
             />
 
-        <EditText
+        <TextView
             android:id="@+id/services"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textStyle="bold|italic"
-            android:hint="Tap on me to select your service today!"
-            android:layout_below="@id/time"
+            android:hint=" Tap on Medi/Pedi below to choose your service today!"
+            android:textSize="18sp"
+            android:layout_below="@+id/time"
             android:layout_marginLeft="0dp"/>
-
+<!--About and Question mark-->
         <Button
             android:id="@+id/StoreInfo"
             android:layout_width="100dp"
@@ -51,48 +52,54 @@
             android:layout_below="@id/services"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
-            android:background="@drawable/about_store_btn"
-            />
-        <TextView
-            android:id="@+id/infoText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/StoreInfo"
-            android:layout_centerHorizontal="true"
-            android:text="Please select Store Info for more information"/>
+            android:background="@drawable/about_store_btn" />
+        <ImageView
+            android:id="@+id/aboutMark"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/services"
+            android:background="@drawable/question_mark"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/StoreInfo" />
 
+<!--Medicure and Question mark-->
         <Button
             android:id="@+id/Medicure"
             android:layout_width="100dp"
             android:layout_height="40dp"
-            android:layout_below="@id/infoText"
+            android:layout_below="@id/StoreInfo"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/medicure_btn"
-            />
-        <TextView
-            android:id="@+id/MedicureText"
-            android:text="Please select Medicure for more options"
-            android:layout_below="@id/Medicure"
-            android:layout_centerHorizontal="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_marginTop="40dp"
+            android:background="@drawable/medicure_btn"/>
+        <ImageView
+            android:id="@+id/MediMark"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/StoreInfo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="44dp"
+            android:layout_toRightOf="@id/StoreInfo"
+            android:background="@drawable/question_mark" />
+<!--Pedicure and Question mark-->
         <Button
             android:id="@+id/Pedicure"
-            android:layout_below="@id/MedicureText"
+            android:layout_below="@id/Medicure"
             android:layout_centerHorizontal="true"
             android:background="@drawable/pedicure_btn"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:layout_width="100dp"
             android:layout_height="40dp" />
-        <TextView
-            android:id="@+id/PedicureText"
-            android:text="Please select Pedicure for more options"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@id/Pedicure"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
+        <ImageView
+            android:id="@+id/PediMark"
+            android:background="@drawable/question_mark"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/Pedicure"
+            android:layout_below="@id/Medicure"
+            android:layout_marginTop="46dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+<!--Ready to Book!-->
         <Button
             android:id="@+id/Book"
             android:layout_width="match_parent"

@@ -7,7 +7,7 @@
     tools:context=".PedicureInfo">
     <Button
         android:id="@+id/backBtn"
-        android:background="@drawable/round_arrow_back_ios_black_18dp"
+        android:background="@drawable/baseline_arrow_left_black_18dp"
         android:layout_centerVertical="true"
         android:layout_width="30dp"
         android:layout_height="150dp" />
@@ -17,7 +17,7 @@
         android:layout_width="30dp"
         android:layout_height="150dp"
         android:layout_alignParentRight="true"
-        android:background="@drawable/round_arrow_forward_ios_black_18dp"
+        android:background="@drawable/baseline_arrow_right_black_18dp"
         android:layout_centerVertical="true"
         />
 

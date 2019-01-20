@@ -47,6 +47,7 @@
                 android:textColorHint="@color/colorAccent" />
 
             <EditText
+                android:autofillHints="password"
                 android:id="@+id/editTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
