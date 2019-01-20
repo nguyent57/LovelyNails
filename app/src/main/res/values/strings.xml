@@ -2,47 +2,17 @@
     <string name="app_name">Lovely Nails</string>
     <string name="services">Services</string>
     <string name="moreinfo">\n\nFor more information please visit, link:\n https://www.yelp.com/biz/lovely-nails-land-o-lakes.\n\n 
-<b>Store\'s Hours:</b>
-\n\n 
+<b>Store\'s Hours:</b>\n\n
+        <b><i>Mon-Fri:</i></b>9:30<b>AM</b>- 7:00<b>PM</b>\n
+        <b><i>Sat\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020:</i></b>9:30<b>AM</b>- 6:00<b>PM</b>\n
+        <b><i>Sun\u0020\u0020\u0020\u0020\u0020\u0020\u0020:</i></b><b> Closed</b>\n\n
 
--<b>
-
-<i>Mon-Fri:</i></b>9:30<b>AM</b>
-- 7:00 
-<b>PM</b>
-\n 
-
--<b>
-
-<i>Sat\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020:</i>
-
-</b>
-9:30 
-<b>AM</b>
-- 6:00 
-<b>PM</b>
-\n 
-
--<b>
-
-<i>Sun\u0020\u0020\u0020\u0020\u0020\u0020\u0020:</i>
-
-</b>
-
-<b> Closed</b>
-\n\n 
 <b>Phone\u0020\u0020:</b>
 813-388-6411\n\n 
-<b>Address:</b>
-\n19455 
-<i>Shumard Oak Drive</i>
-\nSuite 101\nLand O\'lakes FL 34638\n\n 
+<b>Address:</b>\n
+        19455<i>Shumard Oak Drive</i>\nSuite 101\nLand O\'lakes FL 34638\n\n
 
--<b>
-
-<i>Price List:</i>
-
-</b>
+<b><i>Price List:</i></b>
 \n\n 
 <b>Manicure</b>
 ........................................................................$12\n 
@@ -84,4 +54,9 @@ Extension.................................................add $5 to full set\n
 - fill in....... $45\n </string>
     <string name="medicure_options">Medicure Options</string>
     <string name="medicure_choices">Basic Medicure</string>
+    <string name="about_mark">Select me for more info</string>
+    <string name="medi_mark">Select me for more medicure options</string>
+    <string name="pedi_mark">Select me for more pedicure options</string>
+
+
 </resources>

@@ -39,6 +39,7 @@ public class BookingPage extends AppCompatActivity implements View.OnClickListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_booking_page);
         mAuth = FirebaseAuth.getInstance();
+
         //[SELECT DATE] - on click listener for text view date
         editTextDate = findViewById(R.id.date);
             editTextDate.setOnClickListener(new View.OnClickListener() {
@@ -88,6 +89,7 @@ public class BookingPage extends AppCompatActivity implements View.OnClickListen
         //[SET DATE] - call on setDate method
         TextView dateView = findViewById(R.id.BookingHD);
         setDate(dateView);
+
     }
     //[SET TIME - DATE ON TOP OF SCREEN]
     private void setDate(TextView dateView) {
@@ -98,6 +100,7 @@ public class BookingPage extends AppCompatActivity implements View.OnClickListen
         SimpleDateFormat formatter = new SimpleDateFormat("hh:mm:ss EEE MMM-dd-yyyy");
         String date = formatter.format(today);
         dateView.setText(date);
+
     }
 
     @Override
@@ -119,25 +122,27 @@ public class BookingPage extends AppCompatActivity implements View.OnClickListen
                 startActivity(new Intent(BookingPage.this, PedicureGridView.class));
                 finish();
                 break;
-            //[CASE 4] -
+            //[CASE 4] - IMAGE VIEW ON CLICK - DISPLAY MESSAGE
             case R.id.aboutMark:
-                startActivity(new Intent(BookingPage.this,BookingPage.class));
-                Toast.makeText(this, "Select me for store info :)", Toast.LENGTH_LONG).show();
-                finish();
+                displayToast(getString(R.string.about_mark));
+                //[STOP DISPLAYING MESSAGE]
                 break;
-
+            //[CASE 5] - IMAGE VIEW ON CLICK - DISPLAY MESSAGE
             case R.id.MediMark:
-                startActivity(new Intent(BookingPage.this,BookingPage.class));
-                Toast.makeText(this, "Select me for your Medicure options :)", Toast.LENGTH_LONG).show();
-                finish();
+                displayToast(getString(R.string.medi_mark));
+                //[STOP DISPLAYING MESSAGE]
                 break;
+            //[CASE 6] - IMAGE VIEW ON CLICK - DISPLAY MESSAGE
             case R.id.PediMark:
-                startActivity(new Intent(BookingPage.this,BookingPage.class));
-                Toast.makeText(this, "Select me for your Pedicure options :)", Toast.LENGTH_LONG).show();
-                finish();
+                displayToast(getString(R.string.pedi_mark));
+                //[STOP DISPLAYING MESSAGE]
                 break;
         }
 
+    }
+    //[METHOD TO DISPLAY MESSAGE]
+    private void displayToast(String message) {
+        Toast.makeText(getApplicationContext(),message, Toast.LENGTH_SHORT).show();
     }
 }
 
