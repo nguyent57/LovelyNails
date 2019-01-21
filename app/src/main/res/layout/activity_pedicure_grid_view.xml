@@ -57,9 +57,9 @@
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
-                <ImageView
-                    android:id="@+id/lavanderImage"
-                    android:src="@drawable/lavendar_packages"
+                <EditText
+                    android:id="@+id/lavenderImage"
+                    android:background="@drawable/lavendar_packages"
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="120sp" />
@@ -68,7 +68,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Lavendar"
-                    android:layout_below="@id/lavanderImage"
+                    android:layout_below="@id/lavenderImage"
                     android:layout_centerInParent="true"
                     android:textColor="#FF00"
                     android:textSize="10sp"

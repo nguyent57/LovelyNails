@@ -30,7 +30,8 @@
         <activity android:name=".PedicureInfo" />
         <activity android:name=".PedicureGridView" />
         <activity android:name=".MedicureGridView" />
-        <activity android:name=".PedicureGridView2"></activity>
+        <activity android:name=".PedicureGridView2" />
+        <activity android:name=".PedicureGridView3"></activity>
     </application>
 
 </manifest>

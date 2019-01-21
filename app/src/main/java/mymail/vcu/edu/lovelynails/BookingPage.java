@@ -56,7 +56,7 @@ public class BookingPage extends AppCompatActivity implements View.OnClickListen
                             myCalendar.set(Calendar.YEAR, selectedyear);
                             myCalendar.set(Calendar.MONTH, selectedmonth);
                             myCalendar.set(Calendar.DAY_OF_MONTH, selectedday);
-                            String myFormat = "MMM-dd-yyyy"; //Change as you need
+                            String myFormat = "MM - dd - yyyy"; //Change as you need
                             SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
                             editTextDate.setText(sdf.format(myCalendar.getTime()));
 
@@ -68,6 +68,8 @@ public class BookingPage extends AppCompatActivity implements View.OnClickListen
                     mDatePicker.show();
                 }
             });
+
+        //[TIME - LOGISTIC - NON--OVERLAP]
         editTextTime = findViewById(R.id.time);
             editTextTime.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -75,7 +77,9 @@ public class BookingPage extends AppCompatActivity implements View.OnClickListen
 
                 }
             });
-        serviceText = findViewById(R.id.services);
+        //[SET - UPDATE TEXT VIEW + GET INTENT]
+        serviceText = findViewById(R.id.TextViewServices);
+        serviceText.setText(getIntent().getStringExtra("Description"));
         //[ONCLICK]- BUTTONS
         findViewById(R.id.StoreInfo).setOnClickListener(this);
         findViewById(R.id.Medicure).setOnClickListener(this);
@@ -97,7 +101,7 @@ public class BookingPage extends AppCompatActivity implements View.OnClickListen
         //[DIFFERENT FORMATS]:
         // yyyy-MM-dd
         // EEE MMM dd hh:mm:ss yyyy - result [date in week] [month] [date] [time] [year]
-        SimpleDateFormat formatter = new SimpleDateFormat("hh:mm:ss EEE MMM-dd-yyyy");
+        SimpleDateFormat formatter = new SimpleDateFormat("hh:mm EEE MM - dd - yyyy");
         String date = formatter.format(today);
         dateView.setText(date);
 
@@ -142,6 +146,7 @@ public class BookingPage extends AppCompatActivity implements View.OnClickListen
     }
     //[METHOD TO DISPLAY MESSAGE]
     private void displayToast(String message) {
+        //[DISPLAY THE MESSAGE IN STRING.XML]
         Toast.makeText(getApplicationContext(),message, Toast.LENGTH_SHORT).show();
     }
 }
