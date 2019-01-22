@@ -25,6 +25,7 @@ public class MedicureGridView extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_medicure_grid_view);
         mAuth=FirebaseAuth.getInstance();
+
         //[CHANGE TEXT TO BASIC MEDICURE SERVICE ON CLICK]
         serviceText = findViewById(R.id.BasicMedi);
         serviceText.setOnClickListener(new View.OnClickListener() {

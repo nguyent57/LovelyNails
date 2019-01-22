@@ -12,9 +12,10 @@
 
         <TextView
             android:id="@+id/BookingHD"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Today date"
+            android:layout_centerHorizontal="true"
             android:textColor="#ff00"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
 
@@ -22,40 +23,40 @@
             android:id="@+id/date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/BookingHD"
             android:textColor="#ff00"
+            android:layout_below="@+id/time"
             android:hint=" Tap on me to select your date!"
             android:paddingLeft="0dp"
-            android:textStyle="bold|italic" />
+            android:textStyle="italic" />
 
         <EditText
             android:id="@+id/time"
             android:textColor="#ff00"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/date"
             android:focusable="false"
+            android:layout_below="@+id/TextViewServices"
             android:hint="Tap on me to select your time of visit!"
             android:textAllCaps="false"
-            android:textStyle="bold|italic" />
+            android:textStyle="italic" />
 
         <TextView
             android:id="@+id/TextViewServices"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/time"
             android:layout_marginLeft="0dp"
             android:textColor="#ff00"
+            android:layout_below="@id/BookingHD"
             android:hint=" Tap on Medi/Pedi below to choose your service today!"
             android:textSize="18sp"
-            android:textStyle="bold|italic"
+            android:textStyle="italic"
             />
         <!--About and Question mark-->
         <Button
             android:id="@+id/StoreInfo"
             android:layout_width="100dp"
             android:layout_height="40dp"
-            android:layout_below="@id/TextViewServices"
+            android:layout_below="@id/date"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:background="@drawable/about_store_btn" />
@@ -64,7 +65,7 @@
             android:id="@+id/aboutMark"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_below="@id/TextViewServices"
+            android:layout_below="@id/date"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="26dp"
             android:layout_toRightOf="@id/StoreInfo"

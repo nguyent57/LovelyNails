@@ -1,6 +1,7 @@
 package mymail.vcu.edu.lovelynails;
 
 import android.app.DatePickerDialog;
+import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +10,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
 
@@ -18,6 +20,9 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
+import java.util.SimpleTimeZone;
+
+import static java.util.Locale.*;
 
 /*
 [IN THIS SCREEN]
@@ -32,8 +37,10 @@ public class BookingPage extends AppCompatActivity implements View.OnClickListen
     //[INITIALIZE] - editText, TextView, [INT] - year, month, day
     EditText editTextDate, editTextTime;
     TextView serviceText;
+    TimePickerDialog timePickerDialog;
+    String amPm;
     FirebaseAuth mAuth;
-    private int  mYear, mMonth, mDay;
+    private int  mYear, mMonth, mDay,mHour,mMin,mSec;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,7 +83,21 @@ public class BookingPage extends AppCompatActivity implements View.OnClickListen
             editTextTime.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-
+                    timePickerDialog = new TimePickerDialog(BookingPage.this, new TimePickerDialog.OnTimeSetListener() {
+                        @Override
+                        public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+                            if(hourOfDay>=12)
+                            {
+                                 amPm = "PM";
+                            }else
+                            {
+                                 amPm = "AM";
+                            }
+                            editTextTime.setText(String.format("%02d:%02d",hourOfDay,minute)+amPm);
+                            editTextTime.setText(hourOfDay+":"+minute);
+                        }
+                    },0,0,false);
+                    timePickerDialog.show();
                 }
             });
         //[SET - UPDATE TEXT VIEW + GET INTENT]

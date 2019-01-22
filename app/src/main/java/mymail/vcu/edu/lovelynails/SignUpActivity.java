@@ -86,7 +86,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
          * until the user enters correct length
          */
         if (password.length() < 8) {
-            editTextPassword.setError("Minimum length of password should be 6");
+            editTextPassword.setError("Minimum length of password should be 8");
             editTextPassword.requestFocus();
             return;
         }
