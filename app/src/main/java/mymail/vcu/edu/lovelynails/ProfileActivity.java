@@ -37,7 +37,7 @@ import java.io.IOException;
 public class ProfileActivity extends AppCompatActivity {
 
     private static final int CHOOSE_IMAGE = 101;
-    //[GLOBAL VARIABLES]
+    //[INITIALIZE GLOBAL VARIABLES]
     TextView textView;
     ImageView imageView;
     EditText editText;
@@ -55,7 +55,7 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
         mAuth = FirebaseAuth.getInstance();
 
-        //[DECLARE]: edit text, image view, progress bar, and text view
+        //[DECLARE] edit text, image view, progress bar, and text view
         editText = findViewById(R.id.editTextDisplayName);
         imageView =  findViewById(R.id.imageView);
         progressBar =  findViewById(R.id.progressbar);
@@ -63,15 +63,15 @@ public class ProfileActivity extends AppCompatActivity {
         //[SET ON CLICK FOR IMAGE VIEW]
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
-            //[CALL ON showImageChooser() METHOD
+            //[CALL ON showImageChooser() METHOD]
             public void onClick(View view) {
                 showImageChooser();
             }
         });
 
-        //[LOAD USER INFORMATION]
+        //[LOAD USER INFORMATION METHOD GETS CALLED]
         loadUserInformation();
-        //[SET ON CLICK FOR SAVE BUTTON] -save user information method will be executed once clicked
+        //[ON CLICK FOR SAVE BUTTON] - save user information method will be executed once clicked AND goes to booking page
         findViewById(R.id.buttonSave).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -84,16 +84,16 @@ public class ProfileActivity extends AppCompatActivity {
 
 
     @Override
-    //[METHOD TO RE-OPEN APP]
+    // [START APP]
     protected void onStart() {
         super.onStart();
-        //[USER IS CREATE --> GO TO MAIN PAGE WITHOUT SIGN IN AGAIN - UNLESS SIGNED OUT]
+        //[NOT SIGNED OUT] - go to main activity
         if (mAuth.getCurrentUser() == null) {
             finish();
             startActivity(new Intent(this, MainActivity.class));
         }
     }
-    // [LOAD USER INFO METHOD BEING CALLED]
+    // [LOAD USER INFO METHOD]
     private void loadUserInformation() {
         //[SAVE DATA TO FIREBASE]
         final FirebaseUser user = mAuth.getCurrentUser();
@@ -112,7 +112,7 @@ public class ProfileActivity extends AppCompatActivity {
             //[UPDATE TEXT-VIEW WHEN EMAIL IS VERIFIED OR NOT]
             if (user.isEmailVerified()) {
                 //[WHEN VERIFIED]
-                textView.setText("Email Verified");
+                textView.setText("Your email has been verified, Thank you for choosing us!");
             } else {
                 //[WHEN NOT VERIFIED]
                 textView.setText("Email Not Verified (Click to Verify)");
@@ -133,9 +133,9 @@ public class ProfileActivity extends AppCompatActivity {
         }
     }
 
-    //[SAVE USER INFO METHOD BEING EXECUTED]
+    //[SAVE USER INFO METHOD]
     private void saveUserInformation() {
-        //[SET DISPLAY NAME AS STRING]
+        //[SET editText AS STRING]
         String displayName = editText.getText().toString();
         //[THROW ERROR MESSAGE WHEN DISPLAY NAME IS EMPTY]
         if (displayName.isEmpty()) {
@@ -145,8 +145,7 @@ public class ProfileActivity extends AppCompatActivity {
         }
         //[SAVE USER INFO TO FIREBASE]
         FirebaseUser user = mAuth.getCurrentUser();
-        //[END]
-
+        //[GET USER PROFILE IMAGE]
         if (user != null && profileImageUrl != null) {
             UserProfileChangeRequest profile = new UserProfileChangeRequest.Builder()
                     .setDisplayName(displayName)
@@ -182,7 +181,7 @@ public class ProfileActivity extends AppCompatActivity {
             }
         }
     }
-    //[UP LOAD IMAGE TO FIREBASE STORAGE METHOD IS BEING EXECUTED
+    //[UP LOAD IMAGE TO FIREBASE STORAGE METHOD]
     private void uploadImageToFirebaseStorage() {
         //[UPLOAD TO FIREBASE STORAGE]
         StorageReference profileImageRef =
@@ -209,6 +208,7 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
     @Override
+    //[GENERATE MENU IN TASK BAR]
     public boolean onCreateOptionsMenu(Menu menu) {
 
         MenuInflater inflater = getMenuInflater();
@@ -218,7 +218,7 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
     @Override
-    //[LOG OUT OPTION]
+    //[LOG OUT OPTION - task bar]
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId()) {
@@ -234,7 +234,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         return true;
     }
-
+    //[IMAGE CHOOSER METHOD]
     private void showImageChooser() {
         Intent intent = new Intent();
         intent.setType("image/*");

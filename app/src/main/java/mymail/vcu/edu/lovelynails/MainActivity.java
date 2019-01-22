@@ -19,16 +19,17 @@ import com.google.firebase.auth.FirebaseUser;
 
 /*
 [IN THIS SCREEN]
-- log in (if logged out)
-    - email is required
-        - if email is empty --> toast error message asking for email from input
-        - if email does not match the pattern (example@email.com) --> toast error message asking for correct pattern
-    - password is required
-        - if password is empty --> toast error message asking for password to input (when sign-up)
-        - if password is less than 8 characters --> toast a message to ask user for more secure password
+- Log in (if logged out)
+    - Email is required
+        - If email is empty --> toast error message asking for email from input
+        - If email does not match the pattern (example@email.com) --> toast error message asking for correct pattern
+    - Password is required
+        - If password is empty --> toast error message asking for password to input (when sign-up)
+        - If password is less than 8 characters --> toast a message to ask user for more secure password
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private static final String TAG = "EmailPassword";
+
+    // [INITIALIZE]
     FirebaseAuth mAuth;
     EditText editTextEmail, editTextPassword;
     ProgressBar progressBar;
@@ -39,57 +40,75 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         mAuth = FirebaseAuth.getInstance();
-        // declare all texts, buttons, and progress bar
+        // [FIND VIEW ID] - editText, btn, and progressbar
         editTextEmail =  findViewById(R.id.editTextEmail);
         editTextPassword =  findViewById(R.id.editTextPassword);
         progressBar =  findViewById(R.id.progressbar);
-
-        findViewById(R.id.textViewSignup).setOnClickListener(this);
-        findViewById(R.id.buttonLogin).setOnClickListener(this);
+        //[ON CLICK]
+        findViewById(R.id.textViewSignup).setOnClickListener(this); // TEXT VIEW -SIGN UP
+        findViewById(R.id.buttonLogin).setOnClickListener(this); // BUTTON - LOGIN
 
     }
-
+    //[USER NAME LOG IN METHOD]
     private void userLogin() {
-        // set email as string and get text
+        // Set email as string and get text
         String email = editTextEmail.getText().toString().trim();
-        // set password as string and get text
+        // Set password as string and get text
         String password = editTextPassword.getText().toString().trim();
-        // if the email is empty and user wants to enter the app, message will display Email is required (return back to if statement until email is entered)
+        /* [EMPTY EMAIL LOGIC]
+         * If the email is empty and user wants to enter the app
+         * message will display 'Email is required'
+         * return back to if statement until email is entered
+        */
         if (email.isEmpty()) {
             editTextEmail.setError("Email is required");
             editTextEmail.requestFocus();
             return;
         }
-        // if email pattern does not matche the email format --> return back to if statement until it does
+        /* [INCORRECT PATTERN LOGIC]
+         * If email pattern does not match the email format
+         * toast a message "Please enter a valid email"
+         * return back to if statement until it does
+        */
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             editTextEmail.setError("Please enter a valid email");
             editTextEmail.requestFocus();
             return;
         }
-        // if the password is empty and user wants to enter the app, message will display Password is required (return back to if statement until Password is entered)
+        /* [EMPTY PASSWORD LOGIC]
+         * If the password is empty and user wants to enter the app
+         * message will display 'Password is required'
+         * return back to if statement until Password is entered
+        */
         if (password.isEmpty()) {
             editTextPassword.setError("Password is required");
             editTextPassword.requestFocus();
             return;
         }
-        // the password length is require to be 8 or larger, if the password is entered under 6, it will display Minimum length of password should be 6
-        // until the user enters correct length
+        /* [PASSWORD LENGTH LOGIC]
+         * The password length is require to be 8 or larger
+         * if the password is entered under 8
+         * it will display 'Minimum length of password should be 8'
+         * until the user enters correct length
+        */
         if (password.length() < 8) {
-            editTextPassword.setError("Minimum length of password should be 6");
+            editTextPassword.setError("Minimum length of password should be 8");
             editTextPassword.requestFocus();
             return;
         }
-        // show view - progress bar
+        //[PROGRESS BAR]
         progressBar.setVisibility(View.VISIBLE);
-        // firebase - sign in with email-password
+        /*
+         * [FIREBASE - SIGN IN WITH EMAIL + PASSWORD]
+         */
         mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 progressBar.setVisibility(View.GONE);
                 // if the task is successful --> go to profile activity and finish the loop
                 if (task.isSuccessful()) {
-                    Log.d(TAG, "createUserWithEmail:success");
-                    FirebaseUser user = mAuth.getCurrentUser();
+                    //Log.d(TAG, "createUserWithEmail:success");
+                    //FirebaseUser user = mAuth.getCurrentUser();
                     Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
@@ -104,7 +123,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onStart() {
         super.onStart();
-        // when open the app after log in, if the current user is empty, go to profile activity to update name and picture
+        // [OPEN APP AFTER LOGGED IN] if the current user is empty, go to profile activity to update name and picture
         if (mAuth.getCurrentUser() != null) {
             FirebaseUser currentUser = mAuth.getCurrentUser();
             startActivity(new Intent(this, ProfileActivity.class));
@@ -114,15 +133,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        // when click sign up (as new user)
+        // [AS NEW USER]
         switch (view.getId()) {
             case R.id.textViewSignup:
-                // go to sign up class
+                // [SIGN UP ACTIVITY IS CALLED]
                 startActivity(new Intent(this, SignUpActivity.class));
                 finish();
                 break;
 
-                // if already have an account, muse email and password to log in (go back to private void userLogin method to execute the method)
+                // [SIGN IN] - userLogin method gets called
             case R.id.buttonLogin:
                 userLogin();
                 break;

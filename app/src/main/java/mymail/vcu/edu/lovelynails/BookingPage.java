@@ -25,10 +25,11 @@ import java.util.Locale;
 - choose time from time picker
 - choose services from drop down options
 - store info button - hour + phone + prices
-- menicure - which kind?
-- pedicure - which kind?
+- menicure - which kind? --> [UPDATE] text view in Booking page from PedicureGridView page
+- pedicure - which kind? --> [UPDATE] text view in Booking page from MedicureGridView page
  */
 public class BookingPage extends AppCompatActivity implements View.OnClickListener {
+    //[INITIALIZE] - editText, TextView, [INT] - year, month, day
     EditText editTextDate, editTextTime;
     TextView serviceText;
     FirebaseAuth mAuth;
@@ -40,7 +41,7 @@ public class BookingPage extends AppCompatActivity implements View.OnClickListen
         setContentView(R.layout.activity_booking_page);
         mAuth = FirebaseAuth.getInstance();
 
-        //[SELECT DATE] - on click listener for text view date
+        //[SELECT DATE] - on click listener for edit text to change date from calendar picker
         editTextDate = findViewById(R.id.date);
             editTextDate.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -49,20 +50,21 @@ public class BookingPage extends AppCompatActivity implements View.OnClickListen
                     mYear = mcurrentDate.get(Calendar.YEAR);
                     mMonth = mcurrentDate.get(Calendar.MONTH);
                     mDay = mcurrentDate.get(Calendar.DAY_OF_MONTH);
-
+                    //[DATE PICKER] - create listener for date
                     DatePickerDialog mDatePicker = new DatePickerDialog(BookingPage.this, new DatePickerDialog.OnDateSetListener() {
-                        public void onDateSet(DatePicker datepicker, int selectedyear, int selectedmonth, int selectedday) {
+                        //[DATE PARAMETER]
+                        public void onDateSet(DatePicker datepicker, int selectedYear, int selectedMonth, int selectedDay) {
                             Calendar myCalendar = Calendar.getInstance();
-                            myCalendar.set(Calendar.YEAR, selectedyear);
-                            myCalendar.set(Calendar.MONTH, selectedmonth);
-                            myCalendar.set(Calendar.DAY_OF_MONTH, selectedday);
-                            String myFormat = "MM - dd - yyyy"; //Change as you need
+                            myCalendar.set(Calendar.YEAR, selectedYear);
+                            myCalendar.set(Calendar.MONTH, selectedMonth);
+                            myCalendar.set(Calendar.DAY_OF_MONTH, selectedDay);
+                            String myFormat = "EEE, MMM dd"; //Change as you need
                             SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
                             editTextDate.setText(sdf.format(myCalendar.getTime()));
 
-                            mDay = selectedday;
-                            mMonth = selectedmonth;
-                            mYear = selectedyear;
+                            mDay = selectedDay;
+                            mMonth = selectedMonth;
+                            mYear = selectedYear;
                         }
                     }, mYear, mMonth, mDay);
                     mDatePicker.show();
@@ -98,10 +100,15 @@ public class BookingPage extends AppCompatActivity implements View.OnClickListen
     //[SET TIME - DATE ON TOP OF SCREEN]
     private void setDate(TextView dateView) {
         Date today = Calendar.getInstance().getTime();
-        //[DIFFERENT FORMATS]:
-        // yyyy-MM-dd
-        // EEE MMM dd hh:mm:ss yyyy - result [date in week] [month] [date] [time] [year]
-        SimpleDateFormat formatter = new SimpleDateFormat("hh:mm EEE MM - dd - yyyy");
+        //[DIFFERENT FORMATS BASED ON]:
+        // EEE  [date in week]
+        // MMM  [month]
+        // dd   [date]
+        // hh   [time] - hour
+        // mm   [time] - minute
+        // ss   [time] - second
+        // yyyy [year]
+        SimpleDateFormat formatter = new SimpleDateFormat("hh:mm EEE, MMM dd");
         String date = formatter.format(today);
         dateView.setText(date);
 
@@ -111,32 +118,32 @@ public class BookingPage extends AppCompatActivity implements View.OnClickListen
     //[IMPLEMENT ON CLICK FOR BUTTONS]
     public void onClick(View v) {
         switch (v.getId()) {
-            //[CASE 1] - BUTTON STORE INFO
+            //[CASE 1] - BUTTON STORE INFO - DISPLAY STORE INFORMATION FROM STRING.XML
             case R.id.StoreInfo:
                 startActivity(new Intent(BookingPage.this, MoreInfo.class));
                 finish();
                 break;
-            //[CASE 2] - BUTTON MEDICURE
+            //[CASE 2] - BUTTON MEDICURE - CHANGE ACTIVITY FROM BOOKING PAGE TO MEDICUREGIDVIEW CLASS
             case R.id.Medicure:
                 startActivity(new Intent(BookingPage.this, MedicureGridView.class));
                 finish();
                 break;
-            //[CASE 3] - BUTTON PEDICURE
+            //[CASE 3] - BUTTON PEDICURE - CHANGE ACTIVITY FROM BOOKING PAGE TO PERDICUREGIDVIEW CLASS
             case R.id.Pedicure:
                 startActivity(new Intent(BookingPage.this, PedicureGridView.class));
                 finish();
                 break;
-            //[CASE 4] - IMAGE VIEW ON CLICK - DISPLAY MESSAGE
+            //[CASE 4] - IMAGE VIEW ON CLICK - DESCRIPTION OF WHAT ITS PARENTS BUTTON DOES
             case R.id.aboutMark:
                 displayToast(getString(R.string.about_mark));
                 //[STOP DISPLAYING MESSAGE]
                 break;
-            //[CASE 5] - IMAGE VIEW ON CLICK - DISPLAY MESSAGE
+            //[CASE 5] - IMAGE VIEW ON CLICK - DESCRIPTION OF WHAT ITS PARENTS BUTTON DOES
             case R.id.MediMark:
                 displayToast(getString(R.string.medi_mark));
                 //[STOP DISPLAYING MESSAGE]
                 break;
-            //[CASE 6] - IMAGE VIEW ON CLICK - DISPLAY MESSAGE
+            //[CASE 6] - IMAGE VIEW ON CLICK - DESCRIPTION OF WHAT ITS PARENTS BUTTON DOES
             case R.id.PediMark:
                 displayToast(getString(R.string.pedi_mark));
                 //[STOP DISPLAYING MESSAGE]
@@ -144,7 +151,7 @@ public class BookingPage extends AppCompatActivity implements View.OnClickListen
         }
 
     }
-    //[METHOD TO DISPLAY MESSAGE]
+    //[METHOD TO DISPLAY THE DESCRIPTION MESSAGE]
     private void displayToast(String message) {
         //[DISPLAY THE MESSAGE IN STRING.XML]
         Toast.makeText(getApplicationContext(),message, Toast.LENGTH_SHORT).show();

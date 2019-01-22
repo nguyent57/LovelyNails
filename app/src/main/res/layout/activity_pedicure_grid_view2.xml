@@ -61,7 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:id="@+id/lavander"
+                    android:id="@+id/SilkyMilk"
                     android:src="@drawable/lavendar_packages"
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
@@ -70,8 +70,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Lavendar"
-                    android:layout_below="@id/lavander"
+                    android:text="Silk Milk"
+                    android:layout_below="@id/SilkyMilk"
                     android:layout_centerInParent="true"
                     android:textColor="#FF00"
                     android:textSize="10sp"

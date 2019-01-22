@@ -15,6 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Today date"
+            android:textColor="#ff00"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
 
         <EditText
@@ -22,12 +23,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/BookingHD"
+            android:textColor="#ff00"
             android:hint=" Tap on me to select your date!"
             android:paddingLeft="0dp"
             android:textStyle="bold|italic" />
 
         <EditText
             android:id="@+id/time"
+            android:textColor="#ff00"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/date"
@@ -42,6 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/time"
             android:layout_marginLeft="0dp"
+            android:textColor="#ff00"
             android:hint=" Tap on Medi/Pedi below to choose your service today!"
             android:textSize="18sp"
             android:textStyle="bold|italic"
