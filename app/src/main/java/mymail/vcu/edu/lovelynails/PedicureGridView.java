@@ -28,7 +28,7 @@ FirebaseAuth mAuth;
         //[FIND VIEW ID ON CLICKS]
         findViewById(R.id.scrollDown).setOnClickListener(this); // BTN
         findViewById(R.id.lavenderImage).setOnClickListener(this); //lavender image onclick
-        //[CHANGE TO LAVENDER SERVICE ON CLICK]
+        //[CHANGE TEXT TO LAVENDER SERVICE ON CLICK]
         serviceText = findViewById(R.id.lavenderImage); // service text for lavender
         serviceText.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,7 +39,7 @@ FirebaseAuth mAuth;
                 startActivity(intent);
             }
         });
-        //[CHANGE TO TROPICAL SERVICE ON CLICK]
+        //[CHANGE TEXT TO TROPICAL SERVICE ON CLICK]
         findViewById(R.id.tropicalImage).setOnClickListener(this);
         serviceText = findViewById(R.id.tropicalImage);
         serviceText.setOnClickListener(new View.OnClickListener() {
@@ -51,7 +51,7 @@ FirebaseAuth mAuth;
                 startActivity(intent);
             }
         });
-        //[CHANGE TO SHEA BUTTER SERVICE ON CLICK]
+        //[CHANGE TEXT TO SHEA BUTTER SERVICE ON CLICK]
         findViewById(R.id.sheaButterImage).setOnClickListener(this);
         serviceText = findViewById(R.id.sheaButterImage);
         serviceText.setOnClickListener(new View.OnClickListener() {
@@ -63,7 +63,7 @@ FirebaseAuth mAuth;
                 startActivity(intent);
             }
         });
-        //[CHANGE TO GREEN TEA SERVICE ON CLICK]
+        //[CHANGE TEXT TO GREEN TEA SERVICE ON CLICK]
         findViewById(R.id.GreenTeaImage).setOnClickListener(this);
         serviceText = findViewById(R.id.GreenTeaImage);
         serviceText.setOnClickListener(new View.OnClickListener() {

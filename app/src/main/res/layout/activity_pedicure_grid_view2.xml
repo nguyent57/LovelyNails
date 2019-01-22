@@ -14,7 +14,7 @@
         android:layout_height="0dp">
         <TextView
             android:id="@+id/textGrid"
-            android:background="@drawable/pedicure_btn"
+            android:background="@drawable/spa_treatments"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_width="wrap_content"
@@ -42,7 +42,7 @@
         android:padding="14dp"
         android:layout_width="match_parent"
         android:layout_height="0dp">
-        <!-- Row 1-1 -->
+        <!-- Silky Milk -->
         <android.support.v7.widget.CardView
             android:layout_columnWeight ="1"
             android:layout_rowWeight ="1"
@@ -79,7 +79,7 @@
             </RelativeLayout>
 
         </android.support.v7.widget.CardView>
-        <!-- Row 1-2 -->
+        <!-- Orange & Mandarin -->
         <android.support.v7.widget.CardView
             android:layout_columnWeight ="1"
             android:layout_rowWeight ="1"
@@ -91,29 +91,31 @@
             android:layout_marginRight="10dp"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="2dp">
-            <LinearLayout
+            <RelativeLayout
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
+                    android:id="@+id/OrangeMandarin"
                     android:src="@drawable/logo_drawing"
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <TextView
-                    android:text="test1"
+                    android:text="Orange - Mandarin"
                     android:textAlignment="center"
                     android:textColor="#FF00"
+                    android:layout_below="@+id/OrangeMandarin"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-            </LinearLayout>
+            </RelativeLayout>
 
         </android.support.v7.widget.CardView>
-        <!-- Row 2-1 -->
+        <!-- Purrissima -->
         <android.support.v7.widget.CardView
             android:layout_columnWeight ="1"
             android:layout_rowWeight ="1"
@@ -125,26 +127,28 @@
             android:layout_marginRight="10dp"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="2dp">
-            <LinearLayout
+            <RelativeLayout
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
+                    android:id="@+id/Purrissima"
                     android:src="@drawable/logo_drawing"
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <TextView
-                    android:text="test1"
+                    android:text="Orange - Mandarin"
                     android:textAlignment="center"
                     android:textColor="#FF00"
+                    android:layout_below="@+id/Purrissima"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-            </LinearLayout>
+            </RelativeLayout>
 
         </android.support.v7.widget.CardView>
         <!-- Row 2-2 -->

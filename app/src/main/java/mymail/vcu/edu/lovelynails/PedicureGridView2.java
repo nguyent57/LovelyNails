@@ -9,8 +9,11 @@ import android.widget.ImageView;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class PedicureGridView2 extends AppCompatActivity implements View.OnClickListener{
-String SilkyMilk = "You Choose Silky Milk as Your Service Today! See you soon!";
 ImageView serviceText;
+String SilkyMilkSpa = "You Choose Silky Milk as Your Service Today! See you soon!";
+String OrangeMandarinSpa = "You Choose Orange & Mandarin as Your Service Today! See you soon!";
+String PurrissimaSpa = "You Choose Purrissima as Your Service Today! See you soon!";
+
 FirebaseAuth mAuth;
 
     @Override
@@ -20,13 +23,36 @@ FirebaseAuth mAuth;
         mAuth=FirebaseAuth.getInstance();
         findViewById(R.id.scrollUp).setOnClickListener(this);
         findViewById(R.id.scrollDown).setOnClickListener(this);
+        //[CHANGE TEXT TO SILKY MILK SERVICE ON CLICK]
         serviceText = findViewById(R.id.SilkyMilk);
         serviceText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String name = serviceText.toString();
                 Intent intent = new Intent(PedicureGridView2.this, BookingPage.class);
-                intent.putExtra("Description", SilkyMilk);
+                intent.putExtra("Description", SilkyMilkSpa);
+                startActivity(intent);
+            }
+        });
+        //[CHANGE TEXT TO ORANGE MANDARIN SERVICE ON CLICK]
+        serviceText = findViewById(R.id.OrangeMandarin);
+        serviceText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String name = serviceText.toString();
+                Intent intent = new Intent(PedicureGridView2.this, BookingPage.class);
+                intent.putExtra("Description", OrangeMandarinSpa);
+                startActivity(intent);
+            }
+        });
+        //[CHANGE TEXT TO PURRISSIMA SERVICE ON CLICK]
+        serviceText = findViewById(R.id.Purrissima);
+        serviceText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String name = serviceText.toString();
+                Intent intent = new Intent(PedicureGridView2.this, BookingPage.class);
+                intent.putExtra("Description", PurrissimaSpa);
                 startActivity(intent);
             }
         });
