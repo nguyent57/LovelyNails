@@ -83,4 +83,13 @@ public class MedicureGridView extends AppCompatActivity implements View.OnClickL
                 break;
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        boolean backPress=true;
+        if (backPress)
+        {
+            startActivity(new Intent(this,BookingPage.class));
+        }
+    }
 }

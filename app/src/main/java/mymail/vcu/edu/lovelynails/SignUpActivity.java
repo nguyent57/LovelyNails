@@ -122,6 +122,16 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     }
 
     @Override
+    //[BACK PRESS ON PHONE'S SCREEN]
+    public void onBackPressed() {
+        Boolean backPress = true;
+        if (backPress)
+        {
+            startActivity(new Intent(this, MainActivity.class));
+        }
+    }
+
+    @Override
     // [START APP]
     public void onClick(View view) {
         // [ONCLICK BUTTONS]
@@ -137,5 +147,6 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                 startActivity(new Intent(this, MainActivity.class));
                 break;
         }
+
     }
 }

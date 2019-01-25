@@ -78,7 +78,7 @@ public class BookingPage extends AppCompatActivity implements View.OnClickListen
                 }
             });
 
-        //[TIME - LOGISTIC - NON--OVERLAP]
+        //[TIMEPICKER - AM OR PM]
         editTextTime = findViewById(R.id.time);
             editTextTime.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -96,7 +96,7 @@ public class BookingPage extends AppCompatActivity implements View.OnClickListen
                             editTextTime.setText(String.format("%02d:%02d",hourOfDay,minute)+amPm);
                             editTextTime.setText(hourOfDay+":"+minute);
                         }
-                    },0,0,false);
+                    },00,00,false);
                     timePickerDialog.show();
                 }
             });
@@ -176,6 +176,15 @@ public class BookingPage extends AppCompatActivity implements View.OnClickListen
     private void displayToast(String message) {
         //[DISPLAY THE MESSAGE IN STRING.XML]
         Toast.makeText(getApplicationContext(),message, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onBackPressed() {
+        boolean backPress = true;
+        if (backPress)
+        {
+            startActivity(new Intent(this, ProfileActivity.class));
+        }
     }
 }
 

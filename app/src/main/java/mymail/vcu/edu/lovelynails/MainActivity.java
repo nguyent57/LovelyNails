@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     FirebaseAuth mAuth;
     EditText editTextEmail, editTextPassword;
     ProgressBar progressBar;
+    private long backPressedTime;
+    private Toast backToast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -146,5 +148,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 userLogin();
                 break;
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+    //[BACK PRESS ON PHONE'S SCREEN] - if user accidentally clicks back press on phone, it will give users 2 seconds to make sure users want to exit app
+        if (backPressedTime + 2000 > System.currentTimeMillis()) { // 2000 milli = 2s
+            backToast.cancel();
+            super.onBackPressed();
+            //[EXIT APP]
+            Intent a = new Intent(Intent.ACTION_MAIN);
+            a.addCategory(Intent.CATEGORY_HOME);
+            a.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(a);
+            return;
+        } else {
+            backToast = Toast.makeText(getBaseContext(),"Press back again to exit",Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+        backPressedTime = System.currentTimeMillis();
     }
 }

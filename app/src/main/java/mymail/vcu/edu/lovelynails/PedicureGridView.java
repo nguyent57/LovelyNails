@@ -17,14 +17,16 @@ String LavenderPackage = "You Choose Lavender Package as Your Service Today! See
 String TropicalPackage = "You Choose Tropical Package as Your Service Today! See you soon!";
 String SheaButter = "You Choose Shea Butter as Your Service Today! See you soon!";
 String GreenTea = "You Choose Green Tea as Your Service Today! See you soon!";
-
 FirebaseAuth mAuth;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pedicure_grid_view);
         mAuth=FirebaseAuth.getInstance();
+
         //[FIND VIEW ID ON CLICKS]
         findViewById(R.id.scrollDown).setOnClickListener(this); // BTN
         findViewById(R.id.lavenderImage).setOnClickListener(this); //lavender image onclick
@@ -105,6 +107,15 @@ FirebaseAuth mAuth;
                 finish();
                 break;
 
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        boolean backPressed = true;
+        if (backPressed)
+        {
+            startActivity(new Intent(this, BookingPage.class));
         }
     }
 }
