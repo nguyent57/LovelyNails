@@ -58,8 +58,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:id="@+id/lavenderImage"
-                    android:background="@drawable/lavendar_packages"
+                    android:id="@+id/lavenderPackage"
+                    android:background="@drawable/romance_box"
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="120sp" />
@@ -67,8 +67,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Lavendar"
-                    android:layout_below="@id/lavenderImage"
+                    android:text="Romance Spa Pedi"
+                    android:layout_below="@id/lavenderPackage"
                     android:layout_centerInParent="true"
                     android:textColor="#E6E6FA	"
                     android:textSize="10sp"
@@ -95,8 +95,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:id="@+id/tropicalImage"
-                    android:background="@drawable/lavendar_packages"
+                    android:id="@+id/tropicalNor"
+                    android:background="@drawable/romance_box"
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="120sp" />
@@ -104,8 +104,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tropical"
-                    android:layout_below="@id/tropicalImage"
+                    android:text="Tropical Spa Pedi"
+                    android:layout_below="@id/tropicalNor"
                     android:layout_centerInParent="true"
                     android:textColor="#FF00"
                     android:textSize="10sp"
@@ -132,8 +132,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:id="@+id/sheaButterImage"
-                    android:background="@drawable/lavendar_packages"
+                    android:id="@+id/OrangeMandarin"
+                    android:background="@drawable/romance_box"
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="120sp" />
@@ -141,8 +141,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Shea Butter"
-                    android:layout_below="@id/sheaButterImage"
+                    android:text="Orange - Mandarin Spa Pedi"
+                    android:layout_below="@id/OrangeMandarin"
                     android:layout_centerInParent="true"
                     android:textColor="#FF00"
                     android:textSize="10sp"
@@ -169,8 +169,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:id="@+id/GreenTeaImage"
-                    android:background="@drawable/lavendar_packages"
+                    android:id="@+id/romancePackage"
+                    android:background="@drawable/romance_box"
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="120sp" />
@@ -178,8 +178,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Green Tea"
-                    android:layout_below="@id/GreenTeaImage"
+                    android:text="Special Lavender Spa Pedi"
+                    android:layout_below="@id/romancePackage"
                     android:layout_centerInParent="true"
                     android:textColor="#FF00"
                     android:textSize="10sp"

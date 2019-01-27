@@ -16,7 +16,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-
+//starts
 /*
 [IN THIS SCREEN]
 - Log in (if logged out)
@@ -27,6 +27,7 @@ import com.google.firebase.auth.FirebaseUser;
         - If password is empty --> toast error message asking for password to input (when sign-up)
         - If password is less than 8 characters --> toast a message to ask user for more secure password
  */
+//ends
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     // [INITIALIZE]

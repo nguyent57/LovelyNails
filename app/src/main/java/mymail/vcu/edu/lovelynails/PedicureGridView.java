@@ -12,11 +12,11 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class PedicureGridView extends AppCompatActivity implements View.OnClickListener{
 ImageView serviceText;
-Button button;
-String LavenderPackage = "You Choose Lavender Package as Your Service Today! See you soon!";
-String TropicalPackage = "You Choose Tropical Package as Your Service Today! See you soon!";
-String SheaButter = "You Choose Shea Butter as Your Service Today! See you soon!";
-String GreenTea = "You Choose Green Tea as Your Service Today! See you soon!";
+String LavenderPackage = "You Choose Lavender Package Pedicure as Your Service Today! Please select your date and time!";
+String TropicalPackage = "You Choose Tropical Package Pedicure as Your Service Today! Please select your date and time!";
+String RomancePackage = "You Choose Romance Package Pedicure as Your Service Today! Please select your date and time!";
+String OrangePackage = "You Choose Orange & Mandarin Pedicure as Your Service Today! Please select your date and time!";
+
 FirebaseAuth mAuth;
 
 
@@ -29,9 +29,9 @@ FirebaseAuth mAuth;
 
         //[FIND VIEW ID ON CLICKS]
         findViewById(R.id.scrollDown).setOnClickListener(this); // BTN
-        findViewById(R.id.lavenderImage).setOnClickListener(this); //lavender image onclick
+        findViewById(R.id.lavenderPackage).setOnClickListener(this); //lavender image onclick
         //[CHANGE TEXT TO LAVENDER SERVICE ON CLICK]
-        serviceText = findViewById(R.id.lavenderImage); // service text for lavender
+        serviceText = findViewById(R.id.lavenderPackage); // service text for lavender
         serviceText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,8 +42,8 @@ FirebaseAuth mAuth;
             }
         });
         //[CHANGE TEXT TO TROPICAL SERVICE ON CLICK]
-        findViewById(R.id.tropicalImage).setOnClickListener(this);
-        serviceText = findViewById(R.id.tropicalImage);
+        findViewById(R.id.tropicalNor).setOnClickListener(this);
+        serviceText = findViewById(R.id.tropicalNor);
         serviceText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,27 +53,26 @@ FirebaseAuth mAuth;
                 startActivity(intent);
             }
         });
-        //[CHANGE TEXT TO SHEA BUTTER SERVICE ON CLICK]
-        findViewById(R.id.sheaButterImage).setOnClickListener(this);
-        serviceText = findViewById(R.id.sheaButterImage);
+
+        //[CHANGE TEXT TO ORANGE MANDARIN SERVICE ON CLICK]
+        serviceText = findViewById(R.id.OrangeMandarin);
         serviceText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String name = serviceText.toString(); // [FOR EDIT TEXT] - use getText().toString() ---[FOR IMAGE VIEW] - use .toString()
+                String name = serviceText.toString();
                 Intent intent = new Intent(PedicureGridView.this, BookingPage.class);
-                intent.putExtra("Description", SheaButter);
+                intent.putExtra("Description", OrangePackage);
                 startActivity(intent);
             }
         });
-        //[CHANGE TEXT TO GREEN TEA SERVICE ON CLICK]
-        findViewById(R.id.GreenTeaImage).setOnClickListener(this);
-        serviceText = findViewById(R.id.GreenTeaImage);
+        //[CHANGE TEXT TO  ROMANCE MANDARIN SERVICE ON CLICK]
+        serviceText = findViewById(R.id.romancePackage);
         serviceText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String name = serviceText.toString(); // [FOR EDIT TEXT] - use getText().toString() ---[FOR IMAGE VIEW] - use .toString()
+                String name = serviceText.toString();
                 Intent intent = new Intent(PedicureGridView.this, BookingPage.class);
-                intent.putExtra("Description", GreenTea);
+                intent.putExtra("Description", RomancePackage);
                 startActivity(intent);
             }
         });
@@ -84,22 +83,22 @@ FirebaseAuth mAuth;
     public void onClick(View v) {
         switch (v.getId()){
             // [IMAGE TEXT]
-            case R.id.lavenderImage:
+            case R.id.lavenderPackage:
                 //[TOAST MESSAGE] - change intent from PedicureGridView to BookingPage class [ONLY IF OF ONE THE SERVICES IS SELECTED]
-                Toast.makeText(getApplicationContext(), "Thank You! You chose Lavender as your service today. Please proceed to the next step!", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Thank You! You chose Lavender Pedi as your service today. Please proceed to the next step!", Toast.LENGTH_LONG).show();
                 startActivity(new Intent(this,BookingPage.class));
                 break;
-            case R.id.tropicalImage:
+            case R.id.tropicalNor:
                 startActivity(new Intent(this,BookingPage.class));
-                Toast.makeText(getApplicationContext(), "Thank You! You chose Tropical as your service today. Please proceed to the next step!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Thank You! You chose Tropical Pedi as your service today. Please proceed to the next step!", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.sheaButterImage:
+            case R.id.romancePackage:
                 startActivity(new Intent(this,BookingPage.class));
-                Toast.makeText(getApplicationContext(), "Thank You! You chose Shea Butter as your service today. Please proceed to the next step!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Thank You! You chose Romance Pedi as your service today. Please proceed to the next step!", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.GreenTeaImage:
+            case R.id.OrangeMandarin:
                 startActivity(new Intent(this,BookingPage.class));
-                Toast.makeText(getApplicationContext(), "Thank You! You chose Green Tea as your service today. Please proceed to the next step!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Thank You! You chose Orange and Mandarin Pedi as your service today. Please proceed to the next step!", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.scrollDown:
                 startActivity(new Intent(this,PedicureGridView2.class));

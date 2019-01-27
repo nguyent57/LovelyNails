@@ -18,22 +18,25 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskJars.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskJars.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/tuann.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/tuann.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/BookingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/BookingPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MedicureGridView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MedicureGridView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MoreInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MoreInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MedicureGridView2.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MedicureGridView2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/PedicureGridView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/PedicureGridView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/ProfileActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/ProfileActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/PedicureGridView2.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/PedicureGridView2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/PedicureGridView3.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/PedicureGridView3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/SignUpActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/SignUpActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/lavendar_packages.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/romance_box.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_medicure_grid_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_medicure_grid_view.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_menicure_grid_view2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_menicure_grid_view2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_more_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_more_info.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_pedicure_grid_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pedicure_grid_view.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_pedicure_grid_view2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pedicure_grid_view2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_pedicure_grid_view3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pedicure_grid_view3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -101,11 +104,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SignUpActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/SignUpActivity.java">
+      <file leaf-file-name="PedicureGridView2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/PedicureGridView2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="124" column="36" selection-start-line="124" selection-start-column="36" selection-end-line="124" selection-end-column="36" />
+            <state relative-caret-position="304">
+              <caret line="87" column="83" selection-start-line="87" selection-start-column="83" selection-end-line="87" selection-end-column="83" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,20 +116,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MainActivity.java">
+      <file leaf-file-name="PedicureGridView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/PedicureGridView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="159" column="11" selection-start-line="159" selection-start-column="11" selection-end-line="162" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BookingPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/BookingPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="175" column="36" selection-start-line="175" selection-start-column="36" selection-end-line="175" selection-end-column="36" />
+            <state relative-caret-position="137">
+              <caret line="87" column="92" selection-start-line="87" selection-start-column="92" selection-end-line="87" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,20 +128,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MoreInfo.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MoreInfo.java">
+      <file leaf-file-name="PedicureGridView3.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/PedicureGridView3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
+            <state relative-caret-position="304">
+              <caret line="51" column="83" selection-start-line="51" selection-start-column="83" selection-end-line="51" selection-end-column="83" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MedicureGridView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MedicureGridView.java">
+      <file leaf-file-name="MedicureGridView2.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MedicureGridView2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="91" column="59" selection-start-line="91" selection-start-column="59" selection-end-line="91" selection-end-column="59" />
+            <state relative-caret-position="1207">
+              <caret line="89" column="83" selection-start-line="89" selection-start-column="83" selection-end-line="89" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -170,6 +164,10 @@
       <find>save</find>
       <find>Lavender</find>
       <find>time</find>
+      <find>onstar</find>
+      <find>prices</find>
+      <find>orange</find>
+      <find>romance</find>
     </findStrings>
   </component>
   <component name="GenerateSignedApkSettings">
@@ -2466,35 +2464,35 @@
         <option value="$PROJECT_DIR$/app/src/main/res/anim/slide_down_bottom.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/anim/slide_up_bottom.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/round_edges.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/PedicureGridView3.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_pedicure_grid_view3.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_pedicure_grid_view2.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/PedicureGridView2.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MenicureGridView2.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_medicure_grid_view.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MedicureGridView2.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_menicure_grid_view2.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_booking_page.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_pedicure_grid_view.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/BookingPage.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/PedicureGridView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/SignUpActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MedicureGridView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/ProfileActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MoreInfo.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/SignUpActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_more_info.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_pedicure_grid_view.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/PedicureGridView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_pedicure_grid_view2.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_pedicure_grid_view3.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/PedicureGridView2.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/PedicureGridView3.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MedicureGridView2.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="950" />
+    <option name="width" value="979" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -2504,28 +2502,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="LovelyNails" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LovelyNails" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="LovelyNails" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LovelyNails" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="LovelyNails" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LovelyNails" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
@@ -2558,6 +2534,12 @@
             </path>
             <path>
               <item name="LovelyNails" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="LovelyNails" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
@@ -2565,6 +2547,33 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="LovelyNails" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LovelyNails" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="LovelyNails" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LovelyNails" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LovelyNails" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LovelyNails" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="LovelyNails" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LovelyNails" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2766,16 +2775,16 @@
       <window_info id="Build Variants" order="4" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5006935" side_tool="true" weight="0.32857144" />
-      <window_info anchor="right" id="Preview" order="0" weight="0.22080536" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.052857142" />
+      <window_info anchor="right" id="Preview" order="0" weight="0.7489598" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.3220339" />
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info anchor="bottom" id="Logcat" order="0" />
-      <window_info id="Captures" order="2" weight="0.25" />
+      <window_info id="Captures" order="2" weight="0.24966443" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.07248322" />
-      <window_info anchor="bottom" id="Build" order="3" sideWeight="0.49930653" visible="true" weight="0.32344633" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.12416107" />
+      <window_info anchor="bottom" id="Build" order="3" sideWeight="0.49930653" visible="true" weight="0.28248587" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.32871014" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Device File Explorer" order="4" side_tool="true" />
@@ -2795,26 +2804,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/SignUpActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="41" column="38" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/PedicureGridView2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="46" column="29" selection-start-line="46" selection-end-line="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
@@ -2826,12 +2815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3298">
           <caret line="194" column="7" selection-start-line="194" selection-start-column="7" selection-end-line="194" selection-end-column="7" />
-          <folding>
-            <element signature="e#1455#3054#0" />
-            <element signature="e#3088#4684#0" />
-            <element signature="e#4718#6321#0" />
-            <element signature="e#6355#7952#0" />
-          </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -2963,13 +2946,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/PedicureInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/round_edges.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/question_mark.PNG">
       <provider selected="true" editor-type-id="images">
@@ -2980,13 +2956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/PedicureGridView3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -3007,23 +2976,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="112" selection-start-line="3" selection-start-column="112" selection-end-line="3" selection-end-column="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_pedicure_grid_view3.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_medicure_grid_view.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
@@ -3032,26 +2984,6 @@
       </provider>
       <provider editor-type-id="android-designer2">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_pedicure_grid_view2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="117" column="23" selection-start-line="117" selection-start-column="23" selection-end-line="117" selection-end-column="23" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/PedicureGridView2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="65" column="12" selection-start-line="65" selection-start-column="12" selection-end-line="69" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
@@ -3065,43 +2997,6 @@
             <element signature="e#646#664#0" expanded="true" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_menicure_grid_view2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="194" column="45" selection-start-line="194" selection-start-column="45" selection-end-line="194" selection-end-column="45" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MedicureGridView2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="73" column="30" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
-          <folding>
-            <element signature="e#1121#1480#0" expanded="true" />
-            <element signature="e#1479#1480#0" expanded="true" />
-            <element signature="e#1570#1929#0" expanded="true" />
-            <element signature="e#1928#1929#0" expanded="true" />
-            <element signature="e#2211#2568#0" expanded="true" />
-            <element signature="e#2567#2568#0" expanded="true" />
-            <element signature="e#2722#3084#0" expanded="true" />
-            <element signature="e#3083#3084#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="60" column="12" selection-start-line="60" selection-start-column="12" selection-end-line="69" selection-end-column="43" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up.xml">
@@ -3136,48 +3031,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_pedicure_grid_view.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/app/Activity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
           <caret line="3102" column="16" selection-start-line="3102" selection-start-column="16" selection-end-line="3102" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/PedicureGridView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="115" column="23" selection-start-line="115" selection-start-column="23" selection-end-line="115" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1469#1829#0" expanded="true" />
-            <element signature="e#1828#1829#0" expanded="true" />
-            <element signature="e#2047#2491#0" expanded="true" />
-            <element signature="e#2490#2491#0" expanded="true" />
-            <element signature="e#2716#3155#0" expanded="true" />
-            <element signature="e#3154#3155#0" expanded="true" />
-            <element signature="e#3374#3811#0" expanded="true" />
-            <element signature="e#3810#3811#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/SignUpActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="124" column="36" selection-start-line="124" selection-start-column="36" selection-end-line="124" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3191,30 +3048,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MedicureGridView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="91" column="59" selection-start-line="91" selection-start-column="59" selection-end-line="91" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/ProfileActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="252" column="24" selection-start-line="252" selection-start-column="24" selection-end-line="252" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="159" column="11" selection-start-line="159" selection-start-column="11" selection-end-line="162" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/BookingPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
+        <state relative-caret-position="2213">
           <caret line="175" column="36" selection-start-line="175" selection-start-column="36" selection-end-line="175" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -3224,8 +3060,157 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MoreInfo.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="27" column="104" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="27" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="60" column="12" selection-start-line="60" selection-start-column="12" selection-end-line="69" selection-end-column="43" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MedicureGridView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="91" column="59" selection-start-line="91" selection-start-column="59" selection-end-line="91" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/SignUpActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1031">
+          <caret line="100" column="84" selection-start-line="100" selection-start-column="84" selection-end-line="100" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4321#5532#0" expanded="true" />
+            <element signature="e#5531#5532#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/ProfileActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="89" column="25" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/romance_box.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/PedicureInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_more_info.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#1311#1327#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_menicure_grid_view2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="97" column="16" selection-start-line="97" selection-start-column="16" selection-end-line="97" selection-end-column="16" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_pedicure_grid_view2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1435">
+          <caret line="161" column="8" selection-start-line="161" selection-start-column="8" selection-end-line="161" selection-end-column="8" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_pedicure_grid_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="180" column="48" lean-forward="true" selection-start-line="180" selection-start-column="48" selection-end-line="180" selection-end-column="48" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_pedicure_grid_view3.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="113" column="59" selection-start-line="113" selection-start-column="59" selection-end-line="113" selection-end-column="59" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/PedicureGridView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="87" column="92" selection-start-line="87" selection-start-column="92" selection-end-line="87" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/PedicureGridView2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="87" column="83" selection-start-line="87" selection-start-column="83" selection-end-line="87" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/PedicureGridView3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="51" column="83" selection-start-line="51" selection-start-column="83" selection-end-line="51" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/mymail/vcu/edu/lovelynails/MedicureGridView2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="89" column="83" selection-start-line="89" selection-start-column="83" selection-end-line="89" selection-end-column="83" />
         </state>
       </provider>
     </entry>

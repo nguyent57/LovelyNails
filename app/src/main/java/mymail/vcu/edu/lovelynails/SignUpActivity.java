@@ -18,7 +18,12 @@ import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 /*
 [IN THIS ACTIVITY]
 - Register for new users:
-    -
+    - Email is required
+        - If email is empty --> toast error message asking for email from input
+        - If email does not match the pattern (example@email.com) --> toast error message asking for correct pattern
+    - Password is required
+        - If password is empty --> toast error message asking for password to input (when sign-up)
+        - If password is less than 8 characters --> toast a message to ask user for more secure password
  */
 public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
     // [INITIALIZE]

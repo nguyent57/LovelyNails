@@ -80,4 +80,14 @@ public class MedicureGridView2 extends AppCompatActivity implements View.OnClick
                 break;
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        boolean backPressed = true;
+        if (backPressed)
+        {
+            startActivity(new Intent (this, MedicureGridView.class));
+            overridePendingTransition(R.anim.slide_up_bottom, R.anim.slide_up_top);
+        }
+    }
 }

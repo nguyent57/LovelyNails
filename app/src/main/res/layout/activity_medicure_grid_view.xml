@@ -59,7 +59,7 @@
                 android:layout_height="wrap_content">
                 <ImageView
                     android:id="@+id/BasicMedi"
-                    android:background="@drawable/lavendar_packages"
+                    android:background="@drawable/romance_box"
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="120sp" />
@@ -96,7 +96,7 @@
                 android:layout_height="wrap_content">
                 <ImageView
                     android:id="@+id/FrenchMedi"
-                    android:background="@drawable/lavendar_packages"
+                    android:background="@drawable/romance_box"
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="120sp" />
@@ -133,7 +133,7 @@
                 android:layout_height="wrap_content">
                 <ImageView
                     android:id="@+id/AcrylicMedi"
-                    android:background="@drawable/lavendar_packages"
+                    android:background="@drawable/romance_box"
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="120sp" />
@@ -170,7 +170,7 @@
                 android:layout_height="wrap_content">
                 <ImageView
                     android:id="@+id/iBioSeaweed"
-                    android:background="@drawable/lavendar_packages"
+                    android:background="@drawable/romance_box"
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="120sp" />

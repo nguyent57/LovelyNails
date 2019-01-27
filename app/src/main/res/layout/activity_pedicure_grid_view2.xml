@@ -42,7 +42,9 @@
         android:padding="14dp"
         android:layout_width="match_parent"
         android:layout_height="0dp">
+
         <!-- Silky Milk -->
+
         <android.support.v7.widget.CardView
             android:layout_columnWeight ="1"
             android:layout_rowWeight ="1"
@@ -62,7 +64,7 @@
                 android:layout_height="wrap_content">
                 <ImageView
                     android:id="@+id/SilkyMilk"
-                    android:src="@drawable/lavendar_packages"
+                    android:src="@drawable/romance_box"
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="120sp" />
@@ -70,7 +72,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Silk Milk"
+                    android:text="Silk Milk Spa Pedi"
                     android:layout_below="@id/SilkyMilk"
                     android:layout_centerInParent="true"
                     android:textColor="#FF00"
@@ -79,7 +81,9 @@
             </RelativeLayout>
 
         </android.support.v7.widget.CardView>
-        <!-- Orange & Mandarin -->
+
+        <!-- Green Tea -->
+
         <android.support.v7.widget.CardView
             android:layout_columnWeight ="1"
             android:layout_rowWeight ="1"
@@ -98,16 +102,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:id="@+id/OrangeMandarin"
+                    android:id="@+id/GreenTea"
                     android:src="@drawable/logo_drawing"
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <TextView
-                    android:text="Orange - Mandarin"
+                    android:text="Green Tea Spa Pedi"
                     android:textAlignment="center"
                     android:textColor="#FF00"
-                    android:layout_below="@+id/OrangeMandarin"
+                    android:layout_below="@+id/GreenTea"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_width="wrap_content"
@@ -115,7 +119,9 @@
             </RelativeLayout>
 
         </android.support.v7.widget.CardView>
+
         <!-- Purrissima -->
+
         <android.support.v7.widget.CardView
             android:layout_columnWeight ="1"
             android:layout_rowWeight ="1"
@@ -151,7 +157,9 @@
             </RelativeLayout>
 
         </android.support.v7.widget.CardView>
-        <!-- Row 2-2 -->
+
+        <!-- HoneyPearlPackage -->
+
         <android.support.v7.widget.CardView
             android:layout_columnWeight ="1"
             android:layout_rowWeight ="1"
@@ -163,26 +171,28 @@
             android:layout_marginRight="10dp"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="2dp">
-            <LinearLayout
+            <RelativeLayout
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
+                    android:id="@+id/HoneyPearlPackage"
                     android:src="@drawable/logo_drawing"
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <TextView
-                    android:text="test1"
+                    android:text="Honey Pearl Spa Pedi"
                     android:textAlignment="center"
                     android:textColor="#FF00"
                     android:textSize="18sp"
                     android:textStyle="bold"
+                    android:layout_below="@id/HoneyPearlPackage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-            </LinearLayout>
+            </RelativeLayout>
 
         </android.support.v7.widget.CardView>
 

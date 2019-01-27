@@ -60,7 +60,7 @@
                 android:layout_height="wrap_content">
                 <ImageView
                     android:id="@+id/Shellac"
-                    android:background="@drawable/lavendar_packages"
+                    android:background="@drawable/romance_box"
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="120sp" />
@@ -97,7 +97,7 @@
                 android:layout_height="wrap_content">
                 <ImageView
                     android:id="@+id/UVGel"
-                    android:background="@drawable/lavendar_packages"
+                    android:background="@drawable/romance_box"
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="120sp" />
@@ -134,7 +134,7 @@
                 android:layout_height="wrap_content">
                 <ImageView
                     android:id="@+id/Pink-White"
-                    android:background="@drawable/lavendar_packages"
+                    android:background="@drawable/romance_box"
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="120sp" />
@@ -171,7 +171,7 @@
                 android:layout_height="wrap_content">
                 <ImageView
                     android:id="@+id/Ombre"
-                    android:background="@drawable/lavendar_packages"
+                    android:background="@drawable/romance_box"
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="120sp" />
